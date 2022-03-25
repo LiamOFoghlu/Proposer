@@ -1,0 +1,3 @@
+<p>You answered {{player.correct_answers}} out of 4 questions correctly. </p>
+<p>You have earned {{Constants.money}}.</p> 
+<p> Click Next to continue to the final stage, where you will offer a portion of the {{Constants.money}} to a receiver.</p>

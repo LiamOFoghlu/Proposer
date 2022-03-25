@@ -1,0 +1,4 @@
+<p>The computer has chosen a ball from the box.</p>
+<p>It is a Task ball.</p>
+<p>You will have to complete a maths task to earn {{Constants.money}}. You will have to answer four questions in eight minutes. If you get three or more questions right you will earn {{Constants.money}} and proceed to the offer stage. If you do not, you will get {{Constants.compensation}} and the activity will finish.</p>
+<p>Click Next to begin</p>

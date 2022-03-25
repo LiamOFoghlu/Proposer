@@ -1,0 +1,4 @@
+<p>You answered {{player.correct_answers}} out of 4 questions correctly. </p>
+<p>This is insufficient to earn {{Constants.money}}. </p>
+<p>In compensation for your effort you will receive £1.00, alongside your participation fee of {{ session.participation_fee }}.
+ Click Next to complete the activity.</p>

@@ -1,0 +1,21 @@
+{{ block title }}
+    The Offer
+{{ endblock }}
+{{ block content }}
+
+<br>
+<p>You have {{Constants.money}}, but you cannot keep all of it. You will be randomly matched with a receiver and must offer some of the money to them. You can offer them either 40% or 10%. The rest goes to you.</p>
+<br>
+<h5>Types of receiver</h5>
+<p>There are two types of receiver: Choice, and No-choice. A Choice receiver may choose to reject your offer. If they reject it, you both get zero. A No-choice receiver must accept your offer.</p>
+<p>There are an equal number of Choice and No-choice receivers, so there is a fifty-fifty chance you are matched with either. The receiver will not know whether you did the maths task.</p>
+<p><br></p>  
+
+<h5>Offer</h5>
+{% formfield player.Offer %}
+
+<br>
+
+{{ next_button }}
+
+{{ endblock }}

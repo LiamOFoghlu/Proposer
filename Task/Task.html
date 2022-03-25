@@ -1,0 +1,26 @@
+{{ block title }}
+Maths Task
+{{ endblock }}
+{{ block content }}
+
+<br>
+
+<h5> Question one </h5> 
+{% formfield player.q1 %}
+<br>
+<h5> Question two </h5> 
+{% formfield player.q2 %}
+<br>
+<h5> Question three </h5> 
+{% formfield player.q3 %}
+<br>
+<h5> Question four </h5> 
+{% formfield player.q4 %}
+<br>
+
+
+<br>
+
+{{ next_button }}
+
+{{ endblock }}

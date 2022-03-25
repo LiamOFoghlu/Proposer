@@ -1,0 +1,3 @@
+<p>The computer has chosen a ball from the box.</p>
+<p>It is a No-task ball.</p>
+<p>You have been gifted {{Constants.money}} and you will not have to attempt the maths task. Click Next go to the Offer.</p>
