@@ -25,7 +25,7 @@ def creating_session(subsession):
     import random
     for player in subsession.get_players():         # iterate through the players
         prob = random.uniform(0,1)
-        if prob < 0.6667:
+        if prob < 0.6:
             player.participant.proposer_ball = 0
             player.Merit = "non-earner"
         else:

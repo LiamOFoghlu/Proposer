@@ -10,14 +10,14 @@
 <p>There are three stages. The first stage is the Draw, which determines whether you have to do a maths task or get to skip it. The second stage is the Task, a series of maths questions. The third stage is the Offer, where you must propose a division of some money between yourself and a "receiver".</p>
 <p><br></p>
 <p><h5>The Draw</h5></p>
-<p>Look at the picture of the box below. There are three balls in it. Two of them are No-task balls, and one of them is a Task ball.</p>
-<p>In the first stage of this activity, the computer running this application will randomly select one of the balls. If the computer pulls out the Task ball, you must go on to the second stage and do the maths task. If the computer pulls out a No-task balls, you will skip the task and go directly to the third stage, the Offer.</p>
+<p>Look at the picture of the box below. There are five balls in it. Three of them are No-task balls, and two of them are Task balls.</p>
+<p>In the first stage of this activity, the computer running this application will randomly select one of the balls. If the computer pulls out a Task ball, you must go on to the second stage and do the maths task. If the computer pulls out a No-task balls, you will skip the task and go directly to the third stage, the Offer.</p>
 <br>
-<img align=centre src="{% static 'Balls.png' %}" width="25%" />
+<img align=centre src="{% static 'Balls.png' %}" width="30%" />
 <br>
 <br>
 <p><h5>The Task</h5></p>
-<p>The maths task contains four questions. You must answer them all in eight minutes. If you get three or more right, you will earn {{Constants.money}}. If you get less than three right you will receive a {{Constants.compensation}} payoff and the activity will end.</p>
+<p>The maths task contains four questions. You must answer them all in six minutes. If you get three or more right, you will earn {{Constants.money}}. If you get less than three right you will receive a {{Constants.compensation}} payoff and the activity will end.</p>
 <p><br></p>
 <p><h5>The Offer</h5></p>
 <p>If you get to stage three you will have to propose a division of {{Constants.money}} between yourself and a randomly chosen receiver.</p>

@@ -23,9 +23,9 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     q1 = models.StringField(
-        label = "A shop has an offer: buy 8 kiwis, and every extra kiwi after that is half price. A man goes to the shop and pays £5.50 for some kiwis. The full price of a kiwi is £0.50. How many does he buy?",
+        label = "A shop has an offer: buy 8 kiwis, and every extra kiwi after that is half price. A man goes to the shop and pays £4.50 for some kiwis. The full price of a kiwi is £0.50. How many does he buy?",
         choices = [
-            "14",
+            "9",
             "12",
             "10",
             "15"
@@ -33,12 +33,12 @@ class Player(BasePlayer):
         widget = widgets.RadioSelectHorizontal
     ) 
     q2 = models.StringField(
-        label = "Which of the following is equal to 3y(x - 3) - 2(x - 3)?",
+        label = "A hairdresser has an offer: every third visit is free. They charge £48 for a haircut. Last year Sarah paid £144 for a haaircut. How many times did she go?",
         choices = [
-            "3y(x - 3)",
-            "(x - 3)(3y - 2)",
-            "2y(x - 3)",
-            "(x - 3)(x - 3)"
+            "Two times",
+            "Three times",
+            "Four times",
+            "Five times"
         ],
         widget = widgets.RadioSelectHorizontal
     )     
@@ -53,7 +53,7 @@ class Player(BasePlayer):
         widget = widgets.RadioSelectHorizontal
     )   
     q4 = models.StringField(
-        label = "A trader takes a loan of £120, with 5 percent interest. They buy a painting for £120 and sell it for £189. The profit expressed as a percentage of total cost, including interest, is:",
+        label = "A trader buys a painting for £120 and sells it for £170. They pay a £10 transaction fee. Their profit expressed as a percentage of total cost is:",
         choices = [
             "50%",
             "60%",
@@ -72,7 +72,7 @@ class Task(Page):
     form_model = 'player'
 
     def get_timeout_seconds(player):
-        timeout_seconds = 8*60
+        timeout_seconds = 6*60
         return timeout_seconds    
 
     form_fields = [
@@ -88,13 +88,13 @@ class Task(Page):
         
         # tot up correct answers
         correct_answers = 0
-        if player.q1 == "14":
+        if player.q1 == "10":
             correct_answers = correct_answers + 1
-        if player.q2 == "(x - 3)(3y - 2)":
+        if player.q2 == "Four times":
             correct_answers = correct_answers + 1       
         if player.q3 == "10.50":
             correct_answers = correct_answers + 1 
-        if player.q4 == "50%":
+        if player.q4 == "33%":
             correct_answers = correct_answers + 1  
         player.correct_answers = correct_answers
         if correct_answers < 3:
